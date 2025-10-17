@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./BenchMARL",
+        "./tensordict",
+        "./rl"
+    ]
+}
