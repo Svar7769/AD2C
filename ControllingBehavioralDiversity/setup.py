@@ -8,9 +8,9 @@ setup(
     name="het_control",
     version="0.0.1",
     description="ControllingBehavioralDiversity",
-    url="https://github.com/proroklab/ControllingBehavioralDiversity",
-    author="Matteo Bettini",
-    author_email="mb2389@cl.cam.ac.uk",
+    url="https://github.com/Svar7769/AD2C",
+    author="Svar",
+    author_email="svarrajankumar_patel@student.uml.edu",
     packages=find_packages(),
     install_requires=[],
 )
