@@ -19,30 +19,30 @@ Watch the presentation video of DiCo.
 2. Install our versions of `VMAS`, `TensorDict`, `TorchRL`, and `BenchMARL`.
 
 ```bash
-git clone -b het_control https://github.com/proroklab/VectorizedMultiAgentSimulator.git
+git clone -b het_control https://github.com/Svar7769/VectorizedMultiAgentSimulator.git
 pip install -e VectorizedMultiAgentSimulator
 
-git clone -b het_control https://github.com/matteobettini/tensordict.git
+git clone -b het_control https://github.com/Svar7769/tensordict.git
 cd tensordict
 python setup.py develop
 cd ..
 
-git clone -b het_control https://github.com/matteobettini/rl.git
+git clone -b het_control https://github.com/Svar7769/rl.git
 cd rl
 python setup.py develop
 cd ..
 
-git clone -b het_control https://github.com/matteobettini/BenchMARL.git
+git clone -b het_control https://github.com/Svar7769/BenchMARL.git
 pip install -e BenchMARL
 ```
 3. Install optional dependencies for logging
 ```bash
-pip installl wandb moviepy
+pip install wandb moviepy
 ```
 4. Install this project via
 ```bash
-git clone https://github.com/proroklab/ControllingBehavioralDiversity.git
-pip install -e ControllingBehavioralDiversity
+git clone https://github.com/Svar7769/AD2C.git
+pip install -e AD2C/ControllingBehavioralDiversity
 ```
 5. Try running a script (it will ask for cuda and wandb, you can change these values in `ControllingBehavioralDiversity/het_control/conf/experiment/het_control_experiment.yaml`)
 ```
