@@ -21,6 +21,8 @@ from het_control.environments.vmas import render_callback
 from het_control.models.het_control_mlp_empirical import HetControlMlpEmpiricalConfig
 from het_control.callbacks.esc_callback import ExtremumSeekingController
 from het_control.callbacks.sndESLogger import TrajectorySNDLoggerCallback
+# from het_control.callbacks.performaceLoggerCallback import performaceLoggerCallback
+
 
 
 def setup(task_name):
@@ -72,16 +74,17 @@ def get_experiment(cfg: DictConfig) -> Experiment:
             ExtremumSeekingController(
                         # control_group="agents",
                         control_group="adversary",
-
-                        initial_snd=1.3,
-                        dither_magnitude=0.2,
+                        initial_snd=0.3,
+                        dither_magnitude=0.01,
                         dither_frequency_rad_s=1.0,
-                        integral_gain=-0.05,
+                        integral_gain=-0.001,
                         high_pass_cutoff_rad_s=1.0,
                         low_pass_cutoff_rad_s=1.0,
                         sampling_period=1.0
             ),
-            TrajectorySNDLoggerCallback(control_group="agents"),
+            # TrajectorySNDLoggerCallback(control_group="agents"),
+            TrajectorySNDLoggerCallback(control_group="adversary"),
+            # performaceLoggerCallback(control_group="agents", initial_snd=0.5),
             NormLoggerCallback(),
             ActionSpaceLoss(
                 use_action_loss=cfg.use_action_loss, action_loss_lr=cfg.action_loss_lr

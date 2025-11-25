@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from scipy.spatial.distance import euclidean
 
-from callbacks.utils import *
+from .utils import *
 import networkx as nx 
 import pandas as pd
 

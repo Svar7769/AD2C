@@ -13,7 +13,7 @@ use_action_loss: True
 action_loss_lr: 0.00003
 
 task:
-  agents_with_same_goal: 2
+  agents_with_same_goal: 3
 
 hydra:
   searchpath:

@@ -80,16 +80,16 @@ class esc:
         self.m2 = self.b2 * self.m2 + (1 - self.b2) * np.power(low_pass_output, 2)
         gradient_mag = np.sqrt(self.m2)
 
-        threshold = 0.20
+        threshold = 0.2
 
-        high_gain = -0.10
-        low_gain = -0.05
+        high_gain = -0.025  #0.1
+        # low_gain =  -0.0015  #0.05
 
         if self.use_adapter:
             if gradient_mag > threshold:
                 gain = high_gain
             else:
-                gain = low_gain
+                gain = self.integrator_gain
         else:
             gain = self.integrator_gain
 

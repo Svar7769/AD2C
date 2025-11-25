@@ -11,7 +11,7 @@ from het_control.run import get_experiment
 @hydra.main(
     version_base=None,
     config_path="../conf",
-    config_name="navigation_ippo_config",
+    config_name="navigation_ippo",
 )
 def hydra_experiment(cfg: DictConfig) -> None:
     experiment = get_experiment(cfg=cfg)

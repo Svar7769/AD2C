@@ -3,7 +3,7 @@ defaults:
   - vmas_navigation_config
 
 # Number of agents in the task
-n_agents: 2
+n_agents: 3
 # Number of agents going to the same goal.
 # agents_with_same_goal=1 means each agent has a different goal
 # agents_with_same_goal=n_agents means all agents have the same goal
