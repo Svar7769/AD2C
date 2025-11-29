@@ -42,11 +42,6 @@ class NormLoggerCallback(Callback):
                 (group, "scaling_ratio"),
                 (group, "current_dither"),
                 # New keys for the ESC model
-                (group, "k_hat"),
-                (group, "esc_dither"),
-                (group, "esc_reward_J"),
-                (group, "esc_grad_estimate"),
-                (group, "esc_k_hat_update"),
             ]
             to_log = {}
             for key in keys_to_norm:
