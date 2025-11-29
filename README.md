@@ -3,7 +3,7 @@
 This repository introduces **AD2C (Adaptive Diversity Control)**, a framework for enhancing **multi-agent reinforcement learning (MARL)** by dynamically managing behavioral diversity. It extends the work of **[DiCo: Controlling Behavioral Diversity in Multi-Agent Reinforcement Learning (Bettini et al., ICML 2024)](https://openreview.net/forum?id=qQjUgItPq4)** by introducing a novel adaptive control mechanism based on Extremum Seeking Control (ESC). This allows AD2C to intelligently balance exploration and exploitation to solve complex, heterogeneous MARL tasks like multi-agent navigation.
 
 <p align="center">
-<img src="https://github.com/Svar7769/AD2C-Apdaptive-Diveresity-Control/blob/Master/es_controller/AD2C/assets/ES%20Controller.png" alt="ES Controller FlowChart">
+<img src="https://github.com/Svar7769/AD2C/blob/main/src/AD2C_framework.png" alt="ES Controller FlowChart">
 </p>
 
 ---
